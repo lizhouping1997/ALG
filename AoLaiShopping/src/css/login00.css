@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+em{
+    font-style: normal;
+}
+
+
+
+
+/* 开始 */
+.w_1200 {
+    width: 1200px;
+}
+
+.bg_white {
+    background: #fff;
+}
+.m_auto {
+    margin: auto;
+    margin-top: 35px; 
+}
+/* #login-header .logo {
+    margin-top: 35px;
+} */
+.foot-long>li {
+    width: 240px;
+    height: 100%;
+    margin-top: 5px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.fl {
+    float: left;
+    /* margin-top: -25px; */
+}
+.fr{
+    float:right;
+    margin-top: -35px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.foot-long li .foot-long-icon1 {
+    background-position: -270px -105px;
+    width: 62px;
+    height: 62px;
+}
+
+.foot-long>li .foot-long-icon3 {
+    background-position: -450px -105px;
+    width: 62px;
+    height: 62px;
+}
+
+.foot-long li .foot-long-icon {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.foot-long>li .foot-long-icon4 {
+    background-position: -540px -105px;
+    width: 62px;
+    height: 62px;
+}
+
+
+/* .foot-res {
+    background: url(../img/jingling.png);
+} */
+/* logo定位 */
+.foot-long li .foot-long-desc {
+    position: absolute;
+    top: 20px;
+    left: 85px;
+}
+/* 字体 */
+.foot-long>li .foot-long-desc .btit {
+    font-size: 18px;
+    color: #d61518;
+    line-height: 40px;
+    height: 40px;
+}
+.foot-long>li .foot-long-desc .stit {
+    font-size: 12px;
+    color: #333;
+}
+
+/* .foot-long {
+    height: 112px;
+} */
+
+
+/* 中间登录 */
+.login-main>.cont .myCenter {
+    width: 340px;
+    height: auto;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    margin-top: 75px;
+    position: relative;
+}
+.fr {
+    float: right;
+
+}
+.p_b_10 {
+    padding-bottom: 10px;
+}
+.login-main>.cont .myCenter .register-btn {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 1;
+    font-size: 13px;
+}
+.deep_orange {
+    color: #FF7800;
+}
+.myCenter .myCenter-before>.item {
+    overflow: hidden;
+}
+.p_relative {
+    position: relative;
+}
+/* 右上角图 */
+.myCenter .myCenter-res {
+    background: url(../img/reigister.png);
+}
+.myCenter .myCenter-before>.item.myCenter-loginPc .myCenter-change {
+    background-position: -75px -75px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+
+.login-main>.cont .myCenter .myCenter-before>.item.myCenter-loginPc form {
+    width: 240px;
+}
+.myCenter .myCenter-before>.item.myCenter-loginPc form {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+.m_t_50 {
+    margin-top: 50px;
+}
+/* 用户名 */
+.login-main>.cont .myCenter .myCenter-before>.item.myCenter-loginPc form .myCenter-inpt.myCenter-inpt-name {
+    /* background-image: url(../img/icon_sign_up_page_system.png)  ; */
+    background-position: 0 -90px;
+}
+
+.login-main>.cont .myCenter .myCenter-before>.item.myCenter-loginPc form .input-b {
+    width: 100%;
+}
+.login-main>.cont .myCenter .myCenter-before>.item.myCenter-loginPc form .myCenter-inpt {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    outline: 0;
+    line-height: 40px;
+    height: 40px;
+}
+
+.myCenter .myCenter-before>.item.myCenter-loginPc form .myCenter-inpt {
+   
+    border: 1px solid #D0D0D0;
+    background: #fff;
+
+    text-indent: 4em;
+}
+.login-main>.cont .myCenter .myCenter-before>.item.myCenter-loginPc form .error {
+    line-height: 30px;
+    height: 30px;
+    color: red;
+    width: 95%;
+    margin: auto;
+}
+/* 密码 */
+.login-main>.cont .myCenter .myCenter-before>.item.myCenter-loginPc form .myCenter-inpt.myCenter-inpt-psw {
+    background-image: url(../img/icon_sign_up_key.png);
+    background-position: 0 -135px;
+}
+.myCenter .myCenter-before>.item.myCenter-loginPc form .verlidcode-cont {
+    margin-top: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    line-height: 28px;
+    height: 28px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.clearfloat {
+    float: none;
+    clear: both;
+}
+.login-main>.cont .myCenter .myCenter-before>.item.myCenter-loginPc form .myCenter-other a {
+    line-height: 40px;
+    height: 40px;
+}
+.myCenter .myCenter-before>.item .myCenter-other a {
+    float: left;
+    width: 49.9%;
+    text-align: center;
+    line-height: 60px;
+    height: 60px;
+    font-size: 12px;
+}
+.middle_gray {
+    color: #a7a7a7;
+}
+/* 登录 */
+.m_t_20 {
+    margin-top: 20px;
+}
+.login-main>.cont .myCenter .myCenter-before>.item.myCenter-loginPc form .myCenter-login-btn {
+    width: 100%;
+    padding: 14px 0;
+}
+.com-btn.com-btn-red {
+    background: #C81417;
+    color: #FFF;
+    transition: all ease .3s;
+}
+.com-btn {
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+/* 无需注册 */
+.t_align_center {
+    text-align: center;
+}
+.m_t_20 {
+    margin-top: 20px;
+}
+.middle_gray {
+    color: #a7a7a7;
+    font-size: 12px;
+}
+/* qq微信 */
+.login-main>.cont .myCenter .other-login {
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+.login-main>.cont .myCenter .other-login li {
+    width: 50%;
+    float: left;
+}
+a {
+    color: #000;
+}
+.login-main>.cont .myCenter .other-login li i.qq {
+    background-position: 0 -180px;
+}
+.login-main>.cont .myCenter .other-login li i.wechat {
+    background-position: 0 -225px;
+}
+.login-main>.cont .myCenter .other-login li i {
+    display: block;
+    background-image: url(../img/login-box.png);
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+.login-main>.cont .myCenter .other-login li p {
+    width: 100%;
+    text-align: center;
+    color: #a7a7a7;
+    display: block;
+    line-height: 25px;
+    height: 25px;
+    font-size: 12px;
+}
+/* 二维码 */
+.myCenter .myCenter-before>.item.myCenter-loginMa .myCenter-change {
+    background-position: 0 -75px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.myCenter .myCenter-res {
+    background: url(../img/login-box.png);
+}
+.m_t_50 {
+    margin-top: 50px;
+}
+.myCenter .myCenter-before>.item.myCenter-loginMa .login-ma-cont {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    margin: auto;
+    display: block;
+}
+.myCenter .myCenter-before>.item.myCenter-loginMa .login-ma-cont .login-ma {
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    display: block;
+}
+.myCenter .myCenter-before>.item.myCenter-loginMa .login-ma-cont .login-ma-shadow {
+    width: 170px;
+    height: 170px;
+}
+.myCenter .myCenter-before>.item.myCenter-loginMa .login-ma-cont .login-ma-shadow .shadow-bg {
+    width: 170px;
+    height: 170px;
+    background: #000;
+    filter: alpha(opacity=60);
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 二维码失效 */
+.myCenter .myCenter-before>.item.myCenter-loginMa .login-ma-cont .login-ma-shadow .error-info {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    font-size: 14px;
+    /* fotn-weight: bolder; */
+}
+/* 刷新 */
+.myCenter .myCenter-before>.item.myCenter-loginMa .login-ma-cont .login-ma-shadow .ma-error-btn {
+    position: absolute;
+    top: 115px;
+    left: 22%;
+    width: 100px;
+}
+
+
+/* 底部 */
+.w_1200 {
+    width: 1200px;
+}
+#foot {
+    background: #fff;
+    /* box-shadow: none; */
+    position: relative;
+    overflow: hidden;
+}
+.o_hidden {
+    overflow: hidden;
+}
+.p_t_30 {
+    padding-top: 30px;
+}
+#foot .foot-cont {
+    height: auto;
+}
+.hp-copy {
+    width: 540px;
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+.hp-copy ul li {
+    float: left;
+    margin-left: 10px;
+    color: #666;
+}
+.hp-copy ul li a {
+    font-size: 12px;
+}
+.hp-copyright {
+    width: 540px;
+    margin: 0 auto;
+    margin-top: 12px;
+    text-align: center;
+    overflow: hidden;
+    color: #666;
+    font-size: 12px;
+}
+.authentication {
+    width: 874px;
+    margin-top: 25px;
+    margin-left: 192px;
+}
+.authentication ul li.cation1 {
+    background-position: -891px -25px;
+}
+.authentication ul li {
+    width: 87px;
+    height: 35px;
+    float: left;
+    margin-left: 10px;
+}
+.foot-res {
+    background: url(../img/jingling.png);
+}
+.authentication ul li.cation2 {
+    background-position: -107px -25px;
+}
+.authentication ul li.cation3 {
+    background-position: -199px -25px;
+}
+.authentication ul li.cation4 {
+    background-position: -291px -25px;
+}
+.authentication ul li.cation5 {
+    background-position: -387px -25px;
+}
+.authentication ul li.cation6 {
+    background-position: -480px -25px;
+}
+.authentication ul li.cation7 {
+    background-position: -574px -25px;
+}
+.authentication ul li.cation8 {
+    background-position: -683px -25px;
+}
+.clearfloat {
+    float: none;
+    clear: both;
+}

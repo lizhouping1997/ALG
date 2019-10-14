@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register0.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/register0.js"></script>
+    <script src="../js/captcha-mini.js"></script>
+</head>
+<body>
+    <!-- 注册头部 -->
+<div class="w_1200 m_auto">
+<div class="logo fl">
+    <a href="http://www.aolaigo.com" target="_blank">
+        <img src="http://img1.aolaigo.com/group1/M00/2B/EE/CggUF1mgDUCAHcWmAAAaPIY0xT4626.png" alt="">
+    </a>
+</div>
+<ul class="foot-long fr">
+    <li>
+        <div class="foot-long-icon1 foot-long-icon foot-res"></div>
+        <div class="foot-long-desc">
+            <div class="btit">100%</div>
+            <div class="stit">全场正品保证</div>
+        </div>
+    </li>
+    <li>
+        <div class="foot-long-icon3 foot-long-icon foot-res"></div>
+        <div class="foot-long-desc">
+            <div class="btit">SALE</div>
+            <div class="stit">每天低价特卖</div>
+        </div>
+    </li>
+    <li>
+        <div class="foot-long-icon4 foot-long-icon foot-res"></div>
+        <div class="foot-long-desc">
+            <div class="btit">7Days</div>
+            <div class="stit">七天无理由换货</div>
+        </div>
+    </li>
+</ul>
+<div class="clearfloat"></div>
+</div>
+
+<!-- 中间 -->
+<div class="cont w_1200 m_auto">
+    <!--bigImg-->
+    <div class="bigImg fl">
+        <a href="http://member.aolaigo.com/registration.aspx" target="_blank"><img src="http://img1.aolaigo.com/group1/M00/39/CC/CggUF1rBoeSAL_cFAADtEkIoWlw665=673x558.jpg" alt=""></a>
+    </div>
+    <!--/bigImg-->
+    <!--register-->
+    <div class="av3dcon-right">
+        <div class="v3login-t"><em>注册华盛奥莱会员</em><span><a href="login0.html">已有账户，登录</a></span></div>
+
+        <div class="v3login-z">
+            <!--注册账号-->
+            <div class="v3login-z1">
+                <ul>
+                    <li class="reglia">注册账号</li>
+                    <li class="reglib">
+                        <input maxlength="100" placeholder="请输入手机号码" autocomplete="off" tabindex="1" class="ztxt" name="txtUserName" id="txtUserName" value="" type="text"></li>
+                </ul>
+            </div>
+
+            <!--提示-->
+            <div class="v3login-z2">
+                <ul>
+                    <li class="reglia"></li>
+                    <li class="reglib">
+                        <div class="v3l-red usererr"></div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!--输入密码-->
+            <div class="v3login-z1">
+                <ul>
+                    <li class="reglia">输入密码</li>
+                    <li class="reglib">
+                        <input maxlength="100" placeholder="请输入密码" autocomplete="off" tabindex="2" class="ztxt-m" name="txtPassword" id="txtPassword" value="" type="password">
+                    </li>
+                </ul>
+            </div>
+            <!--提示-->
+            <div class="v3login-z2">
+                <ul>
+                    <li class="reglia"></li>
+                    <li class="reglib">
+                        <div class="v3l-lv pwderr"></div>
+                    </li>
+                </ul>
+            </div>
+            <!--确认密码-->
+            <div class="v3login-z1">
+                <ul>
+                    <li class="reglia">确认密码</li>
+                    <li class="reglib">
+                        <input maxlength="100" placeholder="请输入密码" autocomplete="off" tabindex="2" class="ztxt-m" name="txtRePassword" id="txtRePassword" value="" type="password">
+                    </li>
+                </ul>
+            </div>
+            <!--提示-->
+            <div class="v3login-z2">
+                <ul>
+                    <li class="reglia"></li>
+                    <li class="reglib">
+                        <div class="v3l-red repwderr"></div>
+                    </li>
+                </ul>
+            </div>
+            <!--验证码1-->
+            <div class="v3login-z1">
+                <ul>
+                    <li class="reglia">验证码</li>
+                    <li class="reglib">
+                        <input maxlength="10" placeholder="请输验证码" autocomplete="off" tabindex="2" class="vtxt-y" name="txtValidationCode1" id="txtValidationCode1" value="" type="text">
+                    
+                        <div class="image-code-box">
+                            <canvas width="160" height="45" id="captcha"></canvas>
+                            <div class="form-group__message">请输入图形验证码</div>
+                        </div>
+                    </li>
+                    <li class="reglia">
+                        <!-- 报错了 -->
+                        <!-- <img style="vertical-align: middle;" onclick="this.src='/handlers/validcode.ashx?r=' + Math.random()" alt="" src="/handlers/validcode.ashx" id="imgValidCode"> -->
+                    </li>
+                </ul>
+            </div>
+            <!--提示-->
+            <div class="v3login-z2">
+                <ul>
+                    <li class="reglia"></li>
+                    <li class="reglib">
+                        <div class="v3l-red autherr1"></div>
+                    </li>
+                </ul>
+            </div>
+            <!--验证码-->
+            <div class="v3login-z1">
+                <ul>
+                    <li class="reglia">短信验证</li>
+                    <li class="reglib">
+                        <input maxlength="100" placeholder="请输入验证码" autocomplete="" tabindex="" class="vtxt-y" name="txtValidationCode" id="txtValidationCode" value="" type="text"></li>
+                    <li class="reglic-1">
+                        <input id="aSendCode" value="获取验证码" disabled="disabled" type="button" class="vzhao2"></li>
+                    <!--reglic 默认class  reglic-1 倒计时class-->
+                </ul>
+            </div>
+            <!--提示-->
+            <div class="v3login-z2">
+                <ul>
+                    <li class="reglia"></li>
+                    <li class="reglib">
+                        <div class="v3l-red autherr"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="v3login-z2">
+                <div class="v3l-btn">
+                    <a href="javascript:void(0)" id="btnSubmit" class="btn-login" tabindex="4" style="color: #fff;">注册</a>
+                </div>
+                <input type="hidden" name="sname" id="sname" value="A8E26E2D6A30CB4247D47C882408F7290C11B6BD1254C43926270D2CB85B8BF8">
+
+            </div>
+            <!--复选框-->
+            <!-- <div class="input-cont m_t_10 " style =""> -->
+                
+                <div class="input-cont m_t_10 ">
+                <a href="javascript:;" class="fr middle_gray"> 《奥莱购会员协议》</a>
+                <input class="chkrememberMe fr" checked="checked" value="" id="chkrememberMe" name="chkrememberMe" type="checkbox">
+            </div>
+            <!--提示-->
+        </div>
+    </div>
+    <!--/register-->
+    <div class="clearfloat"></div>
+</div>
+
+
+<!-- 底部 -->
+<div id="foot" class="w_full">
+    <!--与底部间隔-->
+    <div class="full_w p_t_30 o_hidden"></div>
+    <!--/与底部间隔-->
+    <div class="foot-cont w_1200 m_auto">
+        <!--foot-copyright-->
+        <div class="w_1200">
+            <div class="hp-copy">
+                <ul>
+                    <li><a href="http://help.aolaigo.com/64.htm" target="_blank">关于奥莱购</a></li>
+                    <li>|</li>
+                    <li><a href="http://help.aolaigo.com/68.htm" target="_blank">联系我们</a></li>
+                    <li>|</li>
+                    <li><a href="http://help.aolaigo.com/66.htm" target="_blank">诚聘英才</a></li>
+                    <li>|</li>
+                    <li><a href="http://help.aolaigo.com/65.htm" target="_blank">商务合作</a></li>
+                    <li>|</li>
+                    <li><a href="http://help.aolaigo.com/links.htm" target="_blank">友情链接</a></li>
+                    <li>|</li>
+                    <li><a href="http://www.csc86.com/" target="_blank">华南城网</a></li>
+                    <li>|</li>
+                    <li><a href="http://help.aolaigo.com/75.htm" target="_blank">华盛Outlets</a></li>
+                </ul>
+            </div>
+
+            <div class="hp-copyright">
+                Copyright © 2013-2016 深圳华盛电子商务有限公司 粤ICP备16081451-1号 All Right
+                <br>
+                <br>
+                深圳市龙岗区平湖华南城1号交易广场4楼奥莱购（深圳华盛电子商务有限公司）
+            </div>
+            <div class="authentication">
+                <ul>
+                    <li class="foot-res cation1"><a href="https://search.szfw.org/cert/l/cx20140426008003008085" target="_blank"></a></li>
+                    <li class="foot-res cation2"><a href="http://www.ccredit.cn/zx/zx_website.aspx?id=625" target="_blank"></a></li>
+                    <!--公允有信--->
+                    <li class="foot-res cation3"><a href="https://ss.knet.cn/verifyseal.dll?sn=e14050444030048460430e000000&amp;ct=df&amp;a=1&amp;pa=0.5067475390975621" target="_blank"></a></li>
+                    <!---可信------>
+                    <li class="foot-res cation4"><a href="http://www.beianbeian.com/search/aolaigo.com" target="_blank"></a></li>
+                    <li class="foot-res cation5"><a href="https://www.anquan.org/authenticate/cert/?site=http://www.aolaigo.com/&amp;at=business" target="_blank"></a></li>
+                    <!---安全联盟--->
+                    <li class="foot-res cation6"><a href="https://cert.ebs.gov.cn/ad571d5c-83fc-419b-8f47-4ca3a226048e" target="_blank"></a></li>
+                    <li class="foot-res cation7"><a href="http://www.eccsp.org/sitecn/aspx/certificationD.aspx?pid=2884" target="_blank"></a></li>
+                    <li class="foot-res cation8"><a href="http://www.aolaigo.com/shipinxuke.html" target="_blank"></a>
+                    </li>
+                </ul>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+        <!--/foot-copyright-->
+    </div>
+</div>
+</body>
+</html>

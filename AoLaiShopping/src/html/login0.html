@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login00.css">
+</head>
+<body>
+    <!-- 登录顶部 -->
+
+    <div id="login-header" class="w_full bg_white">
+            <div class="w_1200 m_auto">
+                <div class="logo fl">
+                    <a href="http://www.aolaigo.com" target="_blank">
+                        <img src="http://img1.aolaigo.com/group1/M00/2B/EE/CggUF1mgDUCAHcWmAAAaPIY0xT4626.png" alt="">
+                    </a>
+                </div>
+                <ul class="foot-long fr">
+                    <li>
+                        <div class="foot-long-icon1 foot-long-icon foot-res"></div>
+                        <div class="foot-long-desc">
+                            <div class="btit">100%</div>
+                            <div class="stit">全场正品保证</div>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <div class="foot-long-icon3 foot-long-icon foot-res"></div>
+                        <div class="foot-long-desc">
+                            <div class="btit">SALE</div>
+                            <div class="stit">每天低价特卖</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="foot-long-icon4 foot-long-icon foot-res"></div>
+                        <div class="foot-long-desc">
+                            <div class="btit">7Days</div>
+                            <div class="stit">七天无理由换货</div>
+                        </div>
+                    </li>
+    
+                </ul>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+    <!-- 中间 -->
+
+    <div class="login-main w_full" style="background: #ffffff;">
+        <div class="cont w_1200 m_auto">
+            <!--bigImg-->
+            <div class="bigImg fl">
+                <a href="http://sale.aolaigo.com/oplist/2349.html" target="_blank"><img src="http://img1.aolaigo.com/group1/M00/50/77/CggUFl2cS-uAbC6QAAHd_B-1E8I365=673x558.jpg" alt=""></a>
+            </div>
+            <!--/bigImg-->
+            <!--myCenter-->
+            <div class="myCenter fr p_b_10" style="display: block;">
+                <div class="register-btn">
+                    <a href="registration.aspx" class="deep_orange ">立即注册</a>
+                </div>
+                <!--登录前-->
+                <div class="myCenter-before" style="display: block;">
+                    <!--普通登录-->
+                    <div id="divPC" class="item myCenter-loginPc p_relative" style="display:block;">
+                        <div id="divLoginQR" class="myCenter-change myCenter-res"></div>
+                        <form action="handlers/newloginservice.ashx" method="post" onsubmit="return false;">
+                            <div class="inpt-cont m_t_50">
+                                <input type="text" placeholder="请输入用户名" class="input-b myCenter-inpt myCenter-inpt-name" name="loginname" id="loginname">
+                                <div class="error"></div>
+                            </div>
+                            <div class="inpt-cont ">
+                                <input type="password" placeholder="请输入密码" class="input-b myCenter-inpt myCenter-inpt-psw" id="loginpwd" name="loginpwd">
+                                <div class="error"></div>
+                            </div>
+                            <div id="divValidationCode" class="inpt-cont " style="display:none;">
+                                <input id="txtValidationCode" name="txtValidationCode" type="text" style="text-indent:2em;" class="input-s myCenter-inpt fl" placeholder="计算结果">
+                                <div class="verlidcode-cont fl  m_l_20">
+                                    <!-- 报错 -->
+                                    <!-- <img style="vertical-align: middle;" src="validcode.aspx" alt="" onclick="this.src='validcode.aspx?r=' + Math.random()" id="imgValidCode"> -->
+                                </div>
+                                <div class="clearfloat"></div>
+                            </div>
+                            <div class="myCenter-other">
+                                <a href="javascript:void(0);" class="middle_gray" style="text-align: left;">
+                                    <input id="chkrememberMe" type="checkbox" class="fix_checkbox v_middle">
+                                    <label class="middle_gray m_l_10 v_middle" for="myCenter-remember-pc">记住密码</label>
+                                </a>
+                                <a style="text-align: right;" href="findpwd.aspx" class="middle_gray">忘记密码？</a>
+                            </div>
+                            <div class="inpt-cont m_t_20">
+                                <input id="btn-login" type="submit" class="com-btn com-btn-red myCenter-login-btn" value="登录">
+                            </div>
+                            <input type="hidden" name="sname" id="sname" value="CA90375979D292434FA8060F391C77ADFB25DB0278E1F979C25C2FBACC13FC85">
+                        </form>
+                        <div class="inpt-cont m_t_20 middle_gray t_align_center">
+                            无需注册，直接登录
+                        </div>
+                        <ul class="other-login">
+                            <li>
+                                <a href="authorizelogin.aspx?pf=tencent">
+                                    <i class="qq"></i>
+                                    <p>QQ登录</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="authorizelogin.aspx?pf=weixin">
+                                    <i class="wechat"></i>
+                                    <p>微信登录</p>
+                                </a>
+                            </li>
+                            <div class="clearfloat"></div>
+                        </ul>
+                    </div>
+                    <!--/普通登录-->
+                    <!--二维码登录-->
+                    <div id="divQR" class="item myCenter-loginMa p_relative" style="display:none;">
+                        <div class="start" style="display: block;">
+                            <div id="divLoginPC" class="myCenter-change myCenter-res"></div>
+                            <div class="m_t_50">
+                                <div class="login-ma-cont ">
+                                    <!-- 报错 -->
+                                    <!-- <img class="login-ma" src="handlers/qrcode.ashx" alt=""> -->
+                                    <div class="login-ma-shadow">
+                                        <div class="shadow-bg"></div>
+                                        <div class="error-info">二维码已失效</div>
+                                        <div id="divRefresh" class="com-btn com-btn-red ma-error-btn">刷新</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w_p60 m_auto m_t_20">
+                                <div class="loginMa-icon1 myCenter-res fl"></div>
+                                <div class="fr">
+                                    打开 <a href="http://www.aolaigo.com/app.html" class="red">最新版</a> 手机奥莱购
+                                <br>
+                                    扫一扫登录
+                                </div>
+                                <div class="clearfloat"></div>
+                            </div>
+
+                            <div class="inpt-cont m_t_20 middle_gray t_align_center">
+                                无需注册，直接登录
+                            </div>
+                            <ul class="other-login">
+                                <li>
+                                    <a href="#">
+                                        <i class="qq"></i>
+                                        <p>QQ登录</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="wechat"></i>
+                                        <p>微信登录</p>
+                                    </a>
+                                </li>
+                                <div class="clearfloat"></div>
+                            </ul>
+                        </div>
+                        <div id="divQrSuccess" class="success" style="display:none;">
+                            <div class="myCenter-change myCenter-res"></div>
+                            <div class="m_t_50">
+                                <div class="login-ma-success myCenter-res"></div>
+                            </div>
+                            <div class="w_p60 m_auto m_t_20">
+                                <p class="t_align_center">扫描成功！</p>
+                                <div class="red m_t_20 t_align_center f_16">请在手机上确认登录</div>
+                                <div class="clearfloat"></div>
+                            </div>
+                            <div class="myCenter-other m_auto m_t_20 w_p60">
+                                <a href="javascript:void(0)" id="returnRQCode" class="middle_gray"><span class="v_middle">返回二维码</span></a>
+                                <a href="registration.aspx" class="middle_gray"><span class="v_middle">注册账号</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/二维码登录-->
+
+                </div>
+                <!--/登录前-->
+                <!--登录后-->
+                <div class="myCenter-after" style="display: none;">
+                    <img class="myCenter-logo" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1484716592127&amp;di=8eedce43d4b6238b415b46e6339b732b&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.jsnengfei.com%2Fbook_cover%2Fbd24217546.jpg" alt="">
+                    <p class="myCenter-name"><span class="deep_orange">多啦A梦</span>,您好!</p>
+                    <!--center-box-->
+                    <ul class="myCenter-box">
+                        <li>
+                            <a href="#" target="_blank">
+                                <em class="myCenter-tip right-guide-icon-res">12</em>
+                                <i class="myCenter-res box-cont-1"></i>
+                                <p class="middle_gray">代付款</p>
+                            </a>
+                        </li>
+                        <li style="background: #F5F5F5;">
+                            <a href="#" target="_blank">
+                                <em class="myCenter-tip right-guide-icon-res">12</em>
+                                <i class="myCenter-res box-cont-2"></i>
+                                <p class="middle_gray">待发货</p>
+                            </a>
+                        </li>
+                        <li style="background: #F5F5F5;">
+                            <a href="#" target="_blank">
+                                <em class="myCenter-tip right-guide-icon-res">12</em>
+                                <i class="myCenter-res box-cont-3"></i>
+                                <p class="middle_gray">待收货</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <em class="myCenter-tip right-guide-icon-res">1</em>
+                                <i class="myCenter-res box-cont-4"></i>
+                                <p class="middle_gray">进入订单</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/center-box -->
+                    <div class="foot">
+                        <div class="com-btn com-btn-red myCenter-btn">
+                            <a href="#">进入个人中心</a>
+                        </div>
+                    </div>
+                </div>
+                <!--/登录后-->
+            </div>
+            <!--/myCenter-->
+            <div class="clearfloat"></div>
+        </div>
+    </div>
+    <!-- 底部 -->
+
+    <div id="foot" class="w_full">
+            <!--与底部间隔-->
+            <div class="full_w p_t_30 o_hidden"></div>
+            <!--/与底部间隔-->
+            <div class="foot-cont w_1200 m_auto">
+                <!--foot-copyright-->
+                <div class="w_1200">
+                    <div class="hp-copy">
+                        <ul>
+                            <li><a href="http://help.aolaigo.com/64.htm" target="_blank">关于奥莱购</a></li>
+                            <li>|</li>
+                            <li><a href="http://help.aolaigo.com/68.htm" target="_blank">联系我们</a></li>
+                            <li>|</li>
+                            <li><a href="http://help.aolaigo.com/66.htm" target="_blank">诚聘英才</a></li>
+                            <li>|</li>
+                            <li><a href="http://help.aolaigo.com/65.htm" target="_blank">商务合作</a></li>
+                            <li>|</li>
+                            <li><a href="http://help.aolaigo.com/links.htm" target="_blank">友情链接</a></li>
+                            <li>|</li>
+                            <li><a href="http://www.csc86.com/" target="_blank">华南城网</a></li>
+                            <li>|</li>
+                            <li><a href="http://help.aolaigo.com/75.htm" target="_blank">华盛Outlets</a></li>
+                        </ul>
+                    </div>
+                    <div class="hp-copyright">
+                        Copyright © 2013-2016 深圳华盛电子商务有限公司 粤ICP备16081451-1号 All Right
+                        <br>
+                        <br>
+                        深圳市龙岗区平湖华南城1号交易广场4楼奥莱购（深圳华盛电子商务有限公司）
+                    </div>
+                    <div class="authentication">
+                        <ul>
+                            <li class="foot-res cation1"><a href="https://search.szfw.org/cert/l/cx20140426008003008085" target="_blank"></a></li>
+                            <li class="foot-res cation2"><a href="http://www.ccredit.cn/zx/zx_website.aspx?id=625" target="_blank"></a></li>
+                            <!--公允有信--->
+                            <li class="foot-res cation3"><a href="https://ss.knet.cn/verifyseal.dll?sn=e14050444030048460430e000000&amp;ct=df&amp;a=1&amp;pa=0.5067475390975621" target="_blank"></a></li>
+                            <!---可信------>
+                            <li class="foot-res cation4"><a href="http://www.beianbeian.com/search/aolaigo.com" target="_blank"></a></li>
+                            <li class="foot-res cation5"><a href="https://www.anquan.org/authenticate/cert/?site=http://www.aolaigo.com/&amp;at=business" target="_blank"></a></li>
+                            <!---安全联盟--->
+                            <li class="foot-res cation6"><a href="https://cert.ebs.gov.cn/ad571d5c-83fc-419b-8f47-4ca3a226048e" target="_blank"></a></li>
+                            <li class="foot-res cation7"><a href="http://www.eccsp.org/sitecn/aspx/certificationD.aspx?pid=2884" target="_blank"></a></li>
+                            <li class="foot-res cation8"><a href="http://www.aolaigo.com/shipinxuke.html" target="_blank"></a></li>
+                        </ul>
+                        <div class="clearfloat"></div>
+                    </div>
+                </div>
+                <!--/foot-copyright-->
+            </div>
+        </div>
+</body>
+</html>
